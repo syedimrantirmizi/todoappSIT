@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body class="bg-fuchsia-200 font-sans" onload="isUserLogin(); onload()">
+    <div class="flex items-center justify-center w-full">
+        <div class="bg-white/80 w-4/5 mt-5 rounded-md shadow-gray-500 shadow-lg">
+            <div class="flex items-center justify-around pt-5 w-full">
+                <div class="w-4/5 flex justify-between">
+                    <div class="flex justify-start items-end w-56  text-3xl">
+                        <p>Sticky Notes</p>
+                    </div>
+                    <div class="mt-5 flex justify-end gap-5">
+                        <button
+                            class="border-2 p-2  rounded-lg bg-fuchsia-200 hover:bg-fuchsia-400 items-center border-transparent text-fuchsia-800 w-28 transition-all duration-500"
+                            onclick="userLogout()">LogOut</button>
+                        <button
+                            class="border-2 p-2  rounded-lg bg-fuchsia-200 hover:bg-fuchsia-400 items-center border-transparent text-fuchsia-800 w-28 transition-all duration-500"
+                            onclick="deleteAllNodes()">Delete
+                            All</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex items-center justify-around">
+                <div class="border-2 border-fuchsia-200 p-5 mt-3 w-4/5 mb-5 rounded-md">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 place-items-center gap-4 transition-all"
+                        id="additionalnodes">
+                        <div
+                            class="h-64 w-full rounded-md border-2 bg-white flex  flex-col shadow-lg shadow-gray-400 border-none ">
+                            <div class="w-full h-1/2 flex justify-between items-center">
+                                <!-- bg-orange-300/80 daalna hai -->
+                                <div class="bg-orange-300 flex justify-end items-end w-1/2 h-full rounded-tl-md hover:bg-orange-400 transition-all duration-500"
+                                    onclick="addnewnote(this)" id="orange">
+                                </div>
+                                <div class="bg-rose-300 flex justify-end items-end w-full h-full rounded-tr-md hover:bg-rose-400 transition-all duration-500"
+                                    onclick="addnewnote(this)" id="rose">
+                                </div>
+                            </div>
+                            <div class="text-6xl bg-fuchsia-200/50 hover:bg-fuchsia-200 h-1/2 border-solid flex items-center justify-around transition-all duration-500"
+                                onclick="addnewnote(this)" id="fuchsia">
+
+                                <i class=" fa fa-plus" aria-hidden="true"></i>
+
+                            </div>
+                            <div class="w-full h-1/2 flex justify-between items-center">
+                                <div class="bg-green-400 flex justify-end items-end w-full rounded-bl-md h-full hover:bg-green-500 transition-all duration-500"
+                                    onclick="addnewnote(this)" id="green">
+                                </div>
+                                <!-- bg-yellow-300/80 daalna hai -->
+                                <div class="bg-yellow-300 flex justify-end items-end w-1/2 h-full rounded-br-md hover:bg-yellow-400 transition-all duration-500"
+                                    onclick="addnewnote(this)" id="yellow">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+</body>
+
+<script src="app.js"></script>
+
+</html>

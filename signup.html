@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="bg-gradient-to-r from-pink-800 to-black font-sans">
+    <main class="w-full flex justify-center items-center h-screen">
+        <div class="bg-white/40 w-1/2 rounded-tl-7xl flex flex-col items-center justify-center gap-10 rounded-br-7xl"
+            id="maincontainer">
+            <h1 class="flex justify-center text-5xl font-medium mt-10 text-white/50">Hello, Friend!</h1>
+            <input id="email" type="text"
+                class="h-14 p-5 rounded-3xl w-[45%] focus:outline-none focus:bg-black/60 hover:bg-black/60 bg-pink-700/30 text-white focus:placeholder:invisible placeholder:text-white transition-all duration-500"
+                placeholder="Enter Email Address" >
+            <input id="username" type="text"
+                class="h-14 p-5 rounded-3xl w-[45%] focus:outline-none focus:bg-black/60 hover:bg-black/60 bg-pink-700/30 text-white focus:placeholder:invisible placeholder:text-white transition-all duration-500"
+                placeholder="Enter User Name">
+            <input id="password" type="password"
+                class="h-14 p-5 rounded-3xl w-[45%] focus:outline-none focus:bg-black/60 hover:bg-black/60 bg-pink-700/30 text-white focus:placeholder:invisible placeholder:text-white transition-all duration-500"
+                placeholder="Enter Password" onkeypress="onEnter2(event)">
+            <div class="flex justify-between w-[43%] mb-10" id="buttoncontainer">
+                <button
+                    class="bg-pink-700/30 hover:bg-black/60 py-4 w-[40%] text-white rounded-lg transition-all duration-500"
+                    onclick="signup()">Sign up</button>
+                <a href="./login.html"
+                    class="bg-pink-700/30 hover:bg-black/60 py-4 w-[55%] text-white rounded-lg transition-all duration-500 px-2 text-center select-none">Already
+                    a member?</a>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
